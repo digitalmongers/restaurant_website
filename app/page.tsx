@@ -93,12 +93,12 @@ export default function Home() {
 
           {/* Hero Left Content */}
           <div className="absolute top-[320px] left-[120px] max-w-[700px] z-20">
-            <h1 className="text-[80px] font-extrabold leading-[1.12] tracking-normal mb-[48px] text-[#000000] font-inter">
+            <h1 className="text-[60px] font-extrabold leading-[1.3] tracking-normal mb-15 text-[#000000] font-inter">
               Dive into Delights<br /> Of Delectable <span className="text-[#39DB4A]">Food</span>
             </h1>
             {/* Exact Dimensions as specified */}
             <p
-              className="text-[24px] text-[#555555] font-medium leading-[1.6] mb-[56px]"
+              className="text-[24px] text-[#555555] font-medium leading-[1.7] mb-20"
               style={{ width: '622px', height: '88px' }}
             >
               Where Each Plate Weaves a Story of Culinary<br /> Mastery and Passionate Craftsmanship
@@ -119,12 +119,12 @@ export default function Home() {
           {/* Hero Right Content - Image and Circle */}
           <div className="absolute top-[160px] right-[40px] w-[860px] h-[860px]">
             {/* The Green Circle Background */}
-            <div className="w-[760px] h-[760px] bg-[#53EC62] rounded-full absolute top-[100px] right-[0px] z-0"></div>
+            <div className="w-[600px] h-[600px] bg-[#53EC62] rounded-full absolute top-[100px] right-[80px] z-0"></div>
 
             {/* The Girl Image - Exact Figma Dimensions: 722.2 x 797.32 */}
             <div
-              className="absolute z-10 right-[30px] top-[0px]"
-              style={{ width: '722.2px', height: '797.32px' }}
+              className="absolute z-10 right-[50px] -top-[18px]"
+              style={{ width: '720px', height: '720px' }}
             >
               <Image
                 src="/Intersect.svg"
@@ -138,21 +138,21 @@ export default function Home() {
             {/* Floating Elements */}
 
             {/* 1. Hot spicy Food bubble */}
-            <Card className="absolute top-[200px] left-[80px] z-20 outline-none border-none bg-white p-0 overflow-hidden shadow-[0_25px_50px_-12px_rgba(0,0,0,0.12)] rounded-[30px] rounded-br-[0px]">
-              <CardContent className="px-[28px] py-[18px] flex items-center gap-2 p-0">
+            <Card className="absolute top-[200px] left-[20px] z-20 outline-none border-none bg-white p-0 overflow-hidden shadow-2xl rounded-[30px] rounded-br-[0px]">
+              <CardContent className="px-[28px] py-[18px] flex items-center gap-2 px-7 py-3">
                 <span className="text-[#FF6868] font-bold text-[18px]">Hot spicy Food <span className="text-[20px]">🌶️</span></span>
               </CardContent>
             </Card>
 
             {/* 2. Spicy noodles card - Exact requested width/height: 349x132 */}
-            {/* 2. Spicy noodles card - Exact requested width/height: 349x132 */}
+
             <Card
-              className="absolute bottom-[20px] right-[430px] z-20 bg-white outline-none border-none shadow-[0_20px_60px_rgba(0,0,0,0.18)]"
-              style={{ width: '349px', height: '132px', borderRadius: '24px' }}
+              className="absolute top-160 right-[430px] z-20 bg-white outline-none rounded-3xl p-3 border-none shadow-[0_20px_60px_rgba(0,0,0,0.18)]"
+              style={{ width: '349px', height: '132px', }}
             >
-              <CardContent className="flex items-center gap-[20px] px-[20px] py-[20px] h-full p-0">
-                <div className="w-[90px] h-[90px] relative rounded-[18px] overflow-hidden bg-[#FFEEEE] flex-shrink-0 flex items-center justify-center pt-2">
-                  <div className="w-[85%] h-[85%] relative">
+              <CardContent className="flex items-center gap-8 px-5 py-5 h-full  pl-3">
+                <div className="w-[90px] h-[90px] relative rounded-3xl overflow-hidden bg-[#FFEEEE] flex-shrink-0 flex items-center justify-center pt-2">
+                  <div className="w-25 h-25 relative">
                     <Image src="/Mask group (4).png" alt="Spicy noodles" fill className="object-cover" />
                   </div>
                 </div>
@@ -173,16 +173,16 @@ export default function Home() {
             {/* 3. Vegetarian salad card - Exact requested width/height: 349x132 */}
             {/* 3. Vegetarian salad card - Exact requested width/height: 349x132 */}
             <Card
-              className="absolute bottom-[20px] right-[60px] z-20 bg-white outline-none border-none shadow-[0_20px_60px_rgba(0,0,0,0.18)]"
-              style={{ width: '349px', height: '132px', borderRadius: '24px' }}
+              className="absolute top-160 right-15 z-20 bg-white outline-none rounded-3xl p-3 border-none shadow-[0_20px_60px_rgba(0,0,0,0.18)]"
+              style={{ width: '349px', height: '132px', }}
             >
-              <CardContent className="flex items-center gap-[20px] px-[20px] py-[20px] h-full p-0">
+              <CardContent className="flex items-center gap-8 px-[20px] py-[20px] h-full pl-3">
                 <div className="w-[90px] h-[90px] relative rounded-[18px] overflow-hidden bg-[#EEFFED] flex-shrink-0 flex items-center justify-center pt-2">
-                  <div className="w-[85%] h-[85%] relative">
+                  <div className="w-25 h-25 relative">
                     <Image src="/image 13.png" alt="Vegetarian salad" fill className="object-cover" />
                   </div>
                 </div>
-                <div className="flex flex-col gap-[4px] mt-1">
+                <div className="flex flex-col gap-1 mt-1">
                   <h3 className="font-bold text-[20px] text-[#000000] leading-tight">Vegetarian salad</h3>
                   <div className="flex gap-[6px] items-center">
                     <Star className="w-[18px] h-[18px] fill-[#FFC107] text-[#FFC107]" />
@@ -199,7 +199,7 @@ export default function Home() {
           </div>
 
           {/* --- Section 1.5: Popular Categories --- */}
-          <div className="absolute top-[1050px] left-[120px] right-[120px]">
+          <div className="absolute top-[1050px] left-[120px] right-[120px] pt-20">
             <div className="flex flex-col items-center mb-[60px]">
               <span className="text-[#FF6868] text-[20px] font-bold tracking-[0.2em] mb-[15px] uppercase">Customer Favorites</span>
               <h2 className="text-[54px] font-extrabold text-[#000000] font-inter">Popular Categories</h2>
@@ -217,10 +217,10 @@ export default function Home() {
                 >
                   <CardContent className="p-0 flex flex-col items-center">
                     <div
-                      className="w-[120px] h-[120px] rounded-full flex items-center justify-center mb-[25px]"
+                      className="w-35 h-35 rounded-full flex items-center justify-center mb-[25px]"
                       style={{ backgroundColor: cat.color }}
                     >
-                      <Image src={cat.icon} alt={cat.title} width={80} height={80} className="object-contain" />
+                      <Image src={cat.icon} alt={cat.title} width={90} height={90} className="object-contain" />
                     </div>
                     <h3 className="font-bold text-[24px] text-[#000000] mb-[8px]">{cat.title}</h3>
                     <p className="text-[#555555] text-[18px] font-medium">{cat.count}</p>
@@ -231,20 +231,21 @@ export default function Home() {
           </div>
 
           {/* --- Section 1.8: Standout Dishes --- */}
-          <div className="absolute top-[1680px] left-[120px] right-[120px]">
+          <div className="absolute top-[1680px] left-[120px] right-[120px] pt-25">
             <div className="flex justify-between items-end mb-[60px]">
               <div className="flex flex-col">
-                <span className="text-[#FF6868] text-[20px] font-bold tracking-[0.2em] mb-[15px] uppercase">Special Dishes</span>
+                <span className="text-[#FF6868] text-[20px] font-bold tracking-[0.2em] mb-4 uppercase">Special Dishes</span>
                 <h2 className="text-[54px] font-extrabold text-[#000000] font-inter leading-[1.2]">
                   Standout Dishes<br />From Our Menu
                 </h2>
               </div>
               <div className="flex gap-[20px] mb-[10px]">
-                <Button variant="ghost" size="icon" className="bg-[#EFEFEF] hover:bg-[#39DB4A] hover:text-white rounded-full w-[64px] h-[64px] transition-all">
-                  <ChevronLeft className="w-[30px] h-[30px]" />
+                <Button variant="ghost" className="bg-[#EFEFEF] hover:bg-[#39DB4A] hover:text-white rounded-full w-12 h- transition-all">
+                  <ChevronLeft className="size-7" />
                 </Button>
-                <Button variant="ghost" size="icon" className="bg-[#39DB4A] text-white hover:bg-[#39DB4A]/90 rounded-full w-[64px] h-[64px] transition-all">
-                  <ChevronRight className="w-[30px] h-[30px]" />
+
+                <Button variant="ghost" className="bg-[#39DB4A] text-white hover:bg-[#39DB4A]/90 rounded-full w-12 h-12 transition-all">
+                  <ChevronRight className="size-7" />
                 </Button>
               </div>
             </div>
@@ -285,17 +286,17 @@ export default function Home() {
           </div>
 
           {/* --- Section 2: Say About Us (Testimonial) --- */}
-          <div className="absolute top-[2550px] left-[120px] right-[120px] flex justify-between h-[600px] items-center">
+          <div className="absolute top-[2550px] left-[120px] right-[120px] flex justify-between h-[600px] items-center pt-60">
             {/* Chef Image Left */}
             <div className="relative w-[50%] h-[100%] flex flex-col items-center justify-center pt-[40px]">
               {/* The green shaped background behind chef */}
-              <div className="w-[480px] h-[340px] bg-[#53EC62] absolute bottom-[90px] left-[20px] rounded-tl-[100px] rounded-tr-[100px] rounded-bl-[40px] rounded-br-[40px] z-0"></div>
+              <div className="w-[380px] h-[300px] bg-[#53EC62] absolute top-[200px] left-[75px] rounded-tl-[100px] rounded-tr-[100px] rounded-bl-[40px] rounded-br-[40px] z-0"></div>
 
               {/* Blur Shadow under the chef */}
-              <div className="w-[300px] h-[50px] bg-[#53EC62] opacity-40 blur-[30px] absolute bottom-[60px] left-[100px] z-0"></div>
+              <div className="w-[300px] h-[50px] bg-[#53EC62] opacity-40 blur-[30px] absolute bottom-[60px] left-[200px] z-0"></div>
 
               {/* Chef Image Place Holder */}
-              <div className="w-[500px] h-[650px] absolute bottom-[70px] z-10 overflow-visible flex items-end justify-center">
+              <div className="w-[500px] h-[600px] absolute  z-10 overflow-visible flex items-end justify-center  left-1">
                 <Image
                   src="/pngwing 2.png"
                   alt="Chef holding spoon"
@@ -305,13 +306,13 @@ export default function Home() {
               </div>
 
               {/* Floating Emojis as seen in figma */}
-              <div className="absolute top-[280px] left-[0px] text-[32px] z-20 drop-shadow-md">😋</div>
-              <div className="absolute top-[170px] right-[70px] text-[32px] z-20 drop-shadow-md transform rotate-[15deg]">🍕</div>
+              <div className="absolute top-[320px] left-[50px] text-[32px] z-20 drop-shadow-md transform rotate-[35deg]">😋</div>
+              <div className="absolute top-[320px] right-[270px] text-[32px] z-20 drop-shadow-md transform rotate-[40deg]">🍕</div>
 
               {/* Our Best Chef Badge placed correctly overlapping right elbow */}
               {/* Our Best Chef Badge placed correctly overlapping right elbow */}
-              <Card className="absolute bottom-[230px] right-[30px] bg-white rounded-[30px] rounded-tl-[0px] border-none shadow-[0_20px_40px_-5px_rgba(0,0,0,0.1)] z-30">
-                <CardContent className="px-[24px] py-[16px] p-0 font-bold text-[#000000] text-[16px] flex items-center gap-2">
+              <Card className="absolute top-110 left-[370px] bg-white rounded-[30px] rounded-tl-[0px] border-none shadow-[0_20px_40px_-5px_rgba(0,0,0,0.1)] z-30">
+                <CardContent className="px-5 py-.5 font-bold text-[#000000] text-[16px] flex items-center gap-2">
                   Our Best Chef 👨‍🍳
                 </CardContent>
               </Card>
@@ -319,26 +320,26 @@ export default function Home() {
 
             {/* Testimonial Right Content */}
             <div className="w-[45%] flex flex-col justify-center mt-[-80px]">
-              <span className="text-[#FF6868] text-[20px] font-bold tracking-[0.2em] mb-[15px] uppercase">Testimonials</span>
-              <h2 className="text-[54px] font-extrabold text-[#000000] leading-[1.2] mb-[30px] font-inter">
+              <span className="text-[#FF6868] text-[20px] font-bold tracking-[0.2em] pb-20 uppercase">Testimonials</span>
+              <h2 className="text-[54px] font-extrabold text-[#000000] leading-[1.3] pb-10 font-inter">
                 What Our Customers<br />Say About Us
               </h2>
-              <p className="text-[24px] text-[#555555] font-medium leading-[1.6] mb-[45px] max-w-[550px]">
+              <p className="text-xl text-[#555555] font-medium leading-[1.6] pb-20 max-w-[550px]">
                 “I had the pleasure of dining at Foodi last night, and I'm still raving about the experience! The attention to detail in presentation and service was impeccable”
               </p>
 
               {/* Feedback Avatar row */}
               <div className="flex items-center gap-[30px]">
                 <div className="flex -space-x-4">
-                  <Avatar className="w-[64px] h-[64px] border-[4px] border-[#FCFCFC] z-[3] rounded-full overflow-hidden">
+                  <Avatar className="w-17 h-17  border-slate-400 border-2 z-[1] rounded-full overflow-hidden">
                     <AvatarImage src="/Mask group.png" alt="Avatar 1" className="object-cover" />
                     <AvatarFallback>A1</AvatarFallback>
                   </Avatar>
-                  <Avatar className="w-[64px] h-[64px] border-[4px] border-[#FCFCFC] z-[2] rounded-full overflow-hidden">
+                  <Avatar className="w-17 h-17 border-slate-400 border-2 z-[2] rounded-full overflow-hidden">
                     <AvatarImage src="/Mask group (1).png" alt="Avatar 2" className="object-cover" />
                     <AvatarFallback>A2</AvatarFallback>
                   </Avatar>
-                  <Avatar className="w-[64px] h-[64px] border-[4px] border-[#FCFCFC] z-[1] rounded-full overflow-hidden">
+                  <Avatar className="w-17 h-17 border-slate-400 border-2 z-[3] rounded-full overflow-hidden">
                     <AvatarImage src="/Mask group (2).png" alt="Avatar 3" className="object-cover" />
                     <AvatarFallback>A3</AvatarFallback>
                   </Avatar>
@@ -356,30 +357,30 @@ export default function Home() {
           </div>
 
           {/* --- Section 3: Our Story & Services --- */}
-          <div className="absolute top-[3300px] left-[120px] right-[120px] flex justify-between items-start h-[700px]">
+          <div className="absolute top-[3300px] left-[120px] right-[120px] flex justify-between items-start h-[700px] pt-24">
             {/* Left text */}
             <div className="w-[45%] flex flex-col justify-start pt-[60px]">
               <span className="text-[#FF6868] text-[20px] font-bold tracking-[0.2em] mb-[15px] uppercase">Our Story & Services</span>
               <h2 className="text-[54px] font-extrabold text-[#000000] leading-[1.2] mb-[30px] font-inter">
                 Our Culinary Journey<br />And Services
               </h2>
-              <p className="text-[24px] text-[#555555] font-medium leading-[1.6] mb-[45px] max-w-[500px]">
+              <p className="text-xl text-[#555555] font-medium leading-[1.6] mb-[45px] max-w-[500px] pt-5">
                 Rooted in passion, we curate unforgettable dining experiences and offer exceptional services, blending culinary artistry with warm hospitality.
               </p>
-              <Button className="bg-[#53EC62] hover:bg-[#53EC62]/90 text-white rounded-[40px] w-[180px] h-[72px] text-[20px] font-semibold shadow-[0_20px_40px_-5px_rgba(83,236,98,0.4)] transition-all flex items-center justify-center cursor-pointer">
+              <Button className="bg-[#53EC62] hover:bg-[#53EC62]/90 text-white rounded-[40px] w-[180px] h-[72px] text-[20px] font-semibold shadow-[0_20px_40px_-5px_rgba(83,236,98,0.4)] transition-all flex items-center justify-center cursor-pointer mt-5">
                 Explore
               </Button>
             </div>
 
             {/* Right Service Grid - EXACTLY as per figma screenshot with 4 cards overlapping slightly or structured in a grid */}
-            <div className="w-[50%] grid grid-cols-2 gap-[30px] pt-[20px] pr-[20px]">
+            <div className="w-[40%] grid grid-cols-2 gap-10 space-x-5 space-y-5">
               {/* Card 1: Catering */}
               <Card
                 className="bg-white rounded-[30px] border-none shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)]"
-                style={{ width: '277px', height: '297.15px' }}
+                style={{ width: '250px', height: '270px' }}
               >
                 <CardContent className="flex flex-col items-center justify-center text-center p-[40px] px-[20px] h-full p-0">
-                  <div className="text-[#53EC62] mb-[20px]">
+                  <div className="text-[#53EC62] mb-[20px] ">
                     {/* Placeholder Catering Icon */}
                     <svg width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="#53EC62" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><path d="M12 28h40M22 28v-8a10 10 0 0 1 20 0v8M16 28l4 24h24l4-24" /></svg>
                   </div>
@@ -391,7 +392,7 @@ export default function Home() {
               {/* Card 2: Fast Delivery */}
               <Card
                 className="bg-white rounded-[30px] border-none shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)]"
-                style={{ width: '277px', height: '297.15px' }}
+                style={{ width: '250px', height: '270px' }}
               >
                 <CardContent className="flex flex-col items-center justify-center text-center p-[40px] px-[20px] h-full p-0">
                   <div className="text-[#53EC62] mb-[20px]">
@@ -406,7 +407,7 @@ export default function Home() {
               {/* Card 3: Online Ordering */}
               <Card
                 className="bg-white rounded-[30px] border-none shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)]"
-                style={{ width: '277px', height: '297.15px' }}
+                style={{ width: '250px', height: '270px' }}
               >
                 <CardContent className="flex flex-col items-center justify-center text-center p-[40px] px-[20px] h-full p-0">
                   <div className="text-[#53EC62] mb-[20px]">
@@ -421,7 +422,7 @@ export default function Home() {
               {/* Card 4: Gift Cards */}
               <Card
                 className="bg-white rounded-[30px] border-none shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)]"
-                style={{ width: '277px', height: '297.15px' }}
+                style={{ width: '250px', height: '270px' }}
               >
                 <CardContent className="flex flex-col items-center justify-center text-center p-[40px] px-[20px] h-full p-0">
                   <div className="text-[#53EC62] mb-[20px]">
@@ -478,16 +479,16 @@ export default function Home() {
                 <h4 className="font-bold text-[22px] text-[#000000] mb-[30px]">Contact Us</h4>
                 <ul className="flex flex-col gap-[20px]">
                   <li><a href="mailto:example@email.com" className="text-[20px] text-[#555555] hover:text-[#39DB4A]">example@email.com</a></li>
-                  <li><a href="tel:+64958248966" className="text-[20px] text-[#555555] hover:text-[#39DB4A]">+64 958 248 966</a></li>
+                  <li><a href="tel:+64958248966" className="text-[20px] text-[#555555] hover:text-[#39DB4A]">+91 98972 66808</a></li>
                   <li><a href="#" className="text-[20px] text-[#555555] hover:text-[#39DB4A]">Social media</a></li>
                 </ul>
               </div>
             </div>
 
             {/* Social Icons & Copyright */}
-            <div className="flex justify-between items-center mt-[40px] pb-[40px]">
+            <div className="flex justify-start items-center mt-[40px] pb-[40px] ">
               {/* Social Icons */}
-              <div className="flex gap-[20px]">
+              <div className="flex gap-4 ">
                 <a href="#" className="w-[50px] h-[50px] rounded-full bg-[#39DB4A] text-white flex items-center justify-center hover:bg-[#39DB4A]/80 transition-colors shadow-sm">
                   <Facebook className="w-[20px] h-[20px] fill-current" />
                 </a>
@@ -503,8 +504,8 @@ export default function Home() {
               </div>
 
               {/* Copyright */}
-              <div className="text-[20px] text-[#555555] font-medium">
-                Copyright © 2023 Dscode | All rights reserved
+              <div className="text-[20px] text-[#555555] font-medium ml-[60px]">
+                Copyright © 2026 Digital Mongers
               </div>
             </div>
           </footer>

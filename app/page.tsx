@@ -33,7 +33,7 @@ export default function Home() {
       <div 
         style={{ 
           width: `${1728 * scale}px`, 
-          height: `${4450 * scale}px`, 
+          height: `${4700 * scale}px`, 
           position: 'relative',
           overflow: 'hidden'
         }}
@@ -41,7 +41,7 @@ export default function Home() {
         <div
           style={{
             width: '1728px',
-            height: '4450px',
+            height: '4700px',
             transform: `scale(${scale})`,
             transformOrigin: 'top left',
             position: 'absolute',
@@ -198,13 +198,15 @@ export default function Home() {
           </Card>
 
         </div>
-\n        {/* --- Section 1.5: Popular Categories --- */}
+
+        {/* --- Section 1.5: Popular Categories --- */}
         <div className="absolute top-[1050px] left-[120px] right-[120px]">
           <div className="flex flex-col items-center mb-[60px]">
             <span className="text-[#FF6868] text-[20px] font-bold tracking-[0.2em] mb-[15px] uppercase">Customer Favorites</span>
             <h2 className="text-[54px] font-extrabold text-[#000000] font-inter">Popular Categories</h2>
           </div>
-\n          <div className="grid grid-cols-4 gap-[40px]">
+
+          <div className="grid grid-cols-4" style={{ gap: '61px' }}>
             {[
               { title: "Main Dish", icon: "/pngwing 3.png", count: "(86 dishes)", color: "#C1F1C6" },
               { title: "Break Fast", icon: "/pngwing 4.png", count: "(12 break fast)", color: "#FFD5D5" },
@@ -228,8 +230,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-\n        {/* --- Section 1.8: Standout Dishes --- */}
-        <div className="absolute top-[1550px] left-[120px] right-[120px]">
+
+        {/* --- Section 1.8: Standout Dishes --- */}
+        <div className="absolute top-[1680px] left-[120px] right-[120px]">
           <div className="flex justify-between items-end mb-[60px]">
             <div className="flex flex-col">
               <span className="text-[#FF6868] text-[20px] font-bold tracking-[0.2em] mb-[15px] uppercase">Special Dishes</span>
@@ -246,13 +249,16 @@ export default function Home() {
               </Button>
             </div>
           </div>
-\n          <div className="grid grid-cols-3 gap-[40px]">
+
+          <div className="grid grid-cols-3" style={{ gap: '75px' }}>
             {[
               { title: "Fattoush salad", desc: "Description of the item", price: "24.00", rating: "4.9", img: "/Fattoush salad.png" },
               { title: "Vegetable salad", desc: "Description of the item", price: "26.00", rating: "4.6", img: "/Vegetable salad.png" },
               { title: "Egg vegi salad", desc: "Description of the item", price: "23.00", rating: "4.5", img: "/Egg salad.png" }
             ].map((dish, i) => (
-              <Card key={i} className="bg-white rounded-[40px] border-none shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] overflow-hidden flex flex-col relative p-[35px]">
+              <Card key={i} className="bg-white rounded-[40px] border-none shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] overflow-hidden flex flex-col relative p-[35px]"
+                style={{ width: '446px', height: '523px' }}
+              >
                 <Button size="icon" className="absolute top-0 right-0 bg-[#39DB4A] hover:bg-[#39DB4A]/90 rounded-bl-[30px] rounded-tr-[40px] w-[64px] h-[64px] z-10 p-0 border-none outline-none">
                   <Heart className="w-[28px] h-[28px] fill-white text-white" />
                 </Button>
@@ -280,7 +286,7 @@ export default function Home() {
         </div>
 
         {/* --- Section 2: Say About Us (Testimonial) --- */}
-        <div className="absolute top-[2300px] left-[120px] right-[120px] flex justify-between h-[600px] items-center">
+        <div className="absolute top-[2550px] left-[120px] right-[120px] flex justify-between h-[600px] items-center">
           {/* Chef Image Left */}
           <div className="relative w-[50%] h-[100%] flex flex-col items-center justify-center pt-[40px]">
             {/* The green shaped background behind chef */}
@@ -351,7 +357,7 @@ export default function Home() {
         </div>
 
         {/* --- Section 3: Our Story & Services --- */}
-        <div className="absolute top-[3050px] left-[120px] right-[120px] flex justify-between items-start h-[700px]">
+        <div className="absolute top-[3300px] left-[120px] right-[120px] flex justify-between items-start h-[700px]">
           {/* Left text */}
           <div className="w-[45%] flex flex-col justify-start pt-[60px]">
             <span className="text-[#FF6868] text-[20px] font-bold tracking-[0.2em] mb-[15px] uppercase">Our Story & Services</span>
@@ -431,7 +437,7 @@ export default function Home() {
         </div>
 
         {/* --- Section 4: Footer --- */}
-        <footer className="absolute top-[3950px] left-[120px] right-[120px]">
+        <footer className="absolute top-[4200px] left-[120px] right-[120px]">
           <div className="grid grid-cols-4 gap-[40px] mb-[60px]">
             {/* Column 1: Logo & description */}
             <div className="col-span-1 flex flex-col pt-[15px]">

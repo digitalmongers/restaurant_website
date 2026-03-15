@@ -48,7 +48,7 @@ export default function Home() {
             top: 0,
             left: 0
           }}
-          className="bg-[#FCFCFC] overflow-hidden"
+          className="bg-background overflow-hidden"
         >
 
           {/* Navbar */}
@@ -256,7 +256,7 @@ export default function Home() {
                 { title: "Vegetable Salad", desc: "Fresh mixed vegetable garden salad", price: "26.00", rating: "4.6", img: "/Vegetable salad.png" },
                 { title: "Egg vegi Salad", desc: "Protein-rich egg vegetable salad", price: "23.00", rating: "4.5", img: "/Egg salad.png" }
               ].map((dish, i) => (
-                <Card key={i} className="bg-white rounded-[40px] border-none shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] overflow-hidden flex flex-col relative p-[35px]"
+                <Card key={i} className="bg-white rounded-[40px] border-none shadow-xl overflow-hidden flex flex-col relative p-[35px]"
                   style={{ width: '446px', height: '523px' }}
                 >
                   <Button size="icon" className="absolute top-0 right-0 bg-[#39DB4A] hover:bg-[#39DB4A]/90 rounded-bl-[30px] rounded-tr-[40px] w-[64px] h-[64px] z-10 p-0 border-none outline-none">
@@ -359,7 +359,7 @@ export default function Home() {
           {/* --- Section 3: Our Story & Services --- */}
           <div className="absolute top-[3300px] left-[120px] right-[120px] flex justify-between items-start h-[700px] pt-24">
             {/* Left text */}
-            <div className="w-[45%] flex flex-col justify-start pt-[60px]">
+            <div className="w-[45%] flex flex-col justify-start pt-15 space-x-5">
               <span className="text-[#FF6868] text-xl font-bold tracking-[0.2em] mb-[15px] uppercase pb-8">Our Story & Services</span>
               <h2 className="text-[54px] font-extrabold text-[#000000] leading-[1.2] mb-[30px]">
                 Our Culinary Journey<br />And Services
@@ -373,10 +373,10 @@ export default function Home() {
             </div>
 
             {/* Right Service Grid - EXACTLY as per figma screenshot with 4 cards overlapping slightly or structured in a grid */}
-            <div className="w-[40%] grid grid-cols-2 gap-10 space-x-5 space-y-5">
+            <div className="w-[40%] grid grid-cols-2 gap-5 space-y-5">
               {/* Card 1: Catering */}
               <Card
-                className="bg-white rounded-[30px] border-none shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)]"
+                className="bg-white rounded-[30px] border-none shadow-xl"
                 style={{ width: '250px', height: '270px' }}
               >
                 <CardContent className="flex flex-col items-center justify-center text-center p-[40px] px-[20px] h-full p-0">
@@ -391,7 +391,7 @@ export default function Home() {
 
               {/* Card 2: Fast Delivery */}
               <Card
-                className="bg-white rounded-[30px] border-none shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)]"
+                className="bg-white rounded-[30px] border-none shadow-xl"
                 style={{ width: '250px', height: '270px' }}
               >
                 <CardContent className="flex flex-col items-center justify-center text-center p-[40px] px-[20px] h-full p-0">
@@ -406,7 +406,7 @@ export default function Home() {
 
               {/* Card 3: Online Ordering */}
               <Card
-                className="bg-white rounded-[30px] border-none shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)]"
+                className="bg-white rounded-[30px] border-none shadow-xl"
                 style={{ width: '250px', height: '270px' }}
               >
                 <CardContent className="flex flex-col items-center justify-center text-center p-[40px] px-[20px] h-full p-0">
@@ -421,7 +421,7 @@ export default function Home() {
 
               {/* Card 4: Gift Cards */}
               <Card
-                className="bg-white rounded-[30px] border-none shadow-[0_15px_40px_-15px_rgba(0,0,0,0.1)]"
+                className="bg-white rounded-[30px] border-none shadow-xl"
                 style={{ width: '250px', height: '270px' }}
               >
                 <CardContent className="flex flex-col items-center justify-center text-center p-[40px] px-[20px] h-full p-0">

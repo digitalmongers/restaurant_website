@@ -205,7 +205,7 @@ export default function Home() {
               <h2 className="text-[54px] font-extrabold text-[#000000] font-inter">Popular Categories</h2>
             </div>
 
-            <div className="grid grid-cols-4" style={{ gap: '61px' }}>
+            <div className="grid grid-cols-4 gap-10 justify-items-center">
               {[
                 { title: "Main Dish", icon: "/pngwing 3.png", count: "(86 dishes)", color: "#C1F1C6" },
                 { title: "Break Fast", icon: "/pngwing 4.png", count: "(12 break fast)", color: "#FFD5D5" },
@@ -239,22 +239,22 @@ export default function Home() {
                   Standout Dishes<br />From Our Menu
                 </h2>
               </div>
-              <div className="flex gap-[20px] mb-[10px]">
-                <Button variant="ghost" className="bg-[#EFEFEF] hover:bg-[#39DB4A] hover:text-white rounded-full w-12 h- transition-all">
+              <div className="flex gap-2">
+                <Button variant="ghost" className="bg-[#EFEFEF] hover:bg-[#39DB4A]/90 hover:text-white rounded-full w-12 h-12 transition-all">
                   <ChevronLeft className="size-7" />
                 </Button>
 
-                <Button variant="ghost" className="bg-[#39DB4A] text-white hover:bg-[#39DB4A]/90 rounded-full w-12 h-12 transition-all">
+                <Button variant="ghost" className="bg-[#EFEFEF] hover:bg-[#39DB4A]/90 hover:text-white rounded-full w-12 h-12 transition-all">
                   <ChevronRight className="size-7" />
                 </Button>
               </div>
             </div>
 
-            <div className="grid grid-cols-3" style={{ gap: '75px' }}>
+            <div className="grid grid-cols-3 justify-items-center">
               {[
-                { title: "Fattoush salad", desc: "Description of the item", price: "24.00", rating: "4.9", img: "/Fattoush salad.png" },
-                { title: "Vegetable salad", desc: "Description of the item", price: "26.00", rating: "4.6", img: "/Vegetable salad.png" },
-                { title: "Egg vegi salad", desc: "Description of the item", price: "23.00", rating: "4.5", img: "/Egg salad.png" }
+                { title: "Fattoush Salad", desc: "Crisp Middle Eastern herb salad", price: "24.00", rating: "4.9", img: "/Fattoush salad.png" },
+                { title: "Vegetable Salad", desc: "Fresh mixed vegetable garden salad", price: "26.00", rating: "4.6", img: "/Vegetable salad.png" },
+                { title: "Egg vegi Salad", desc: "Protein-rich egg vegetable salad", price: "23.00", rating: "4.5", img: "/Egg salad.png" }
               ].map((dish, i) => (
                 <Card key={i} className="bg-white rounded-[40px] border-none shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] overflow-hidden flex flex-col relative p-[35px]"
                   style={{ width: '446px', height: '523px' }}
@@ -262,7 +262,7 @@ export default function Home() {
                   <Button size="icon" className="absolute top-0 right-0 bg-[#39DB4A] hover:bg-[#39DB4A]/90 rounded-bl-[30px] rounded-tr-[40px] w-[64px] h-[64px] z-10 p-0 border-none outline-none">
                     <Heart className="w-[28px] h-[28px] fill-white text-white" />
                   </Button>
-                  <CardContent className="p-0 flex flex-col">
+                  <CardContent className="flex flex-col">
                     <div className="w-full h-[280px] relative mb-[25px] flex items-center justify-center">
                       <div className="w-[260px] h-[260px] relative">
                         <Image src={dish.img} alt={dish.title} fill className="object-contain" />
@@ -325,7 +325,7 @@ export default function Home() {
                 What Our Customers<br />Say About Us
               </h2>
               <p className="text-xl text-[#555555] font-medium leading-[1.6] pb-20 max-w-[550px]">
-                “I had the pleasure of dining at Foodi last night, and I'm still raving about the experience! The attention to detail in presentation and service was impeccable”
+                “I had the pleasure of dining at Foodi last night, and I&apos m still raving about the experience! The attention to detail in presentation and service was impeccable”
               </p>
 
               {/* Feedback Avatar row */}
@@ -360,8 +360,8 @@ export default function Home() {
           <div className="absolute top-[3300px] left-[120px] right-[120px] flex justify-between items-start h-[700px] pt-24">
             {/* Left text */}
             <div className="w-[45%] flex flex-col justify-start pt-[60px]">
-              <span className="text-[#FF6868] text-[20px] font-bold tracking-[0.2em] mb-[15px] uppercase">Our Story & Services</span>
-              <h2 className="text-[54px] font-extrabold text-[#000000] leading-[1.2] mb-[30px] font-inter">
+              <span className="text-[#FF6868] text-xl font-bold tracking-[0.2em] mb-[15px] uppercase pb-8">Our Story & Services</span>
+              <h2 className="text-[54px] font-extrabold text-[#000000] leading-[1.2] mb-[30px]">
                 Our Culinary Journey<br />And Services
               </h2>
               <p className="text-xl text-[#555555] font-medium leading-[1.6] mb-[45px] max-w-[500px] pt-5">
@@ -504,7 +504,7 @@ export default function Home() {
               </div>
 
               {/* Copyright */}
-              <div className="text-[20px] text-[#555555] font-medium ml-[60px]">
+              <div className="text-[20px] text-[#555555] font-medium justify-self-end ml-10">
                 Copyright © 2026 Digital Mongers
               </div>
             </div>
